@@ -1,10 +1,10 @@
 function capitalizeLetter(string) {
-    if (string = '') {
+    if (!string) {
         return ""
     } else {
-    return string.charAt(0).toUpperCase() + string.slice(1)
-};
-}
-// console.log(capitalizeLetter('foo'));
+          return string.charAt(0).toUpperCase() + string.slice(1)
+        }
+    }
 
-module.exports = capitalizeLetter;
+    
+module.exports = {capitalizeLetter};
