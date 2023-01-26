@@ -1,4 +1,4 @@
-const capitalizeLetter = require("./capitalize");
+const {capitalizeLetter} = require("./capitalize");
 
 
     test("Name", () => {
