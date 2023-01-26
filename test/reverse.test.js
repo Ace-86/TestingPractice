@@ -9,3 +9,6 @@ test('Does not contain string', () => {
 test('String contains null', () => {
     expect(reverseString(null)).toBe("");
 })
+
+//to-do: add test for numbers check
+//add test for characters (non-numbers/letters) check

@@ -10,3 +10,8 @@ const {capitalizeLetter} = require("./capitalize");
     test("Is Null", () => {
         expect(capitalizeLetter(null)).toBe("");
     });
+
+    //to-do: add test for all letters capitalized
+    //add test for numbers and characters (eliminating and creating new string)
+    //add test for spaces in words
+    //add test for first letter already capitalized
