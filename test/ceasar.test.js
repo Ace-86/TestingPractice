@@ -1,6 +1,6 @@
-const Ceasar = require("./ceasar")
+const { caesar } = require("./ceasar");
 
-test('Ceasar Cypher', () => {
-  expect(ceasar(adam, 1)).toBe(bebn);
+test('Ceasar cipher', () => {
+  expect(caesar("adam", 1)).toMatch("bebn");
 });
 
