@@ -18,3 +18,11 @@ function findMax(value) {
 }
 
 console.log(findMax([1, 2,3,4,5,6,7]))
+
+function findLength(value) {
+    if(toString.call(value) !== "[object Array]")
+    return false
+    return value.length
+}
+
+console.log(findLength([1,2,3,4,5,6,7]))
