@@ -1,4 +1,6 @@
 const getAverage = (value) => {
+    if (toString.call(value) !== "[object Array]") //verifies if value is a type of array
+    return false;
     return value.reduce((a, b) => a + b, 0) / value.length;
 }
 // console.log(getAverage([1,2,3,4,5,6,7]))
@@ -14,6 +16,8 @@ const findMin = (value) => {
 // findMin();
 
 const findMax = (value) => {
+    if (toString.call(value) !== "[object Array]") //verifies if value is a type of array
+    return false;
     return Math.max.apply(null, value);
 }
 
