@@ -1,16 +1,17 @@
 
+const check = require("./analyzeArray");
 
 test('find the average', () => {
-    expect(caesar([1,8,3,4,2,6]).toBe(4));
+    expect(check.getAverage([1,8,3,4,2,6])).toEqual(4);
   });
   test('find the minimum', () => {
-    expect(caesar([1,8,3,4,2,6]).toBe(1));
+    expect(check.findMin([1,8,3,4,2,6])).toBe(1);
   });
   test('find the max', () => {
-    expect(caesar([1,8,3,4,2,6]).toBe(8));
+    expect(check.findMax([1,8,3,4,2,6])).toEqual(8);
   });
   test('find the length', () => {
-    expect(caesar([1,8,3,4,2,6]).toBe(6));
+    expect(check.findLength([1,8,3,4,2,6])).toBe(6);
   });
   
   
