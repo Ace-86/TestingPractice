@@ -5,10 +5,16 @@ function getAverage(values) {
 
 
 function findMin(value) {
-    if (toString.call(value) !== "[object Array]")
+    if (toString.call(value) !== "[object Array]") //verifies if value is a type of array
     return false;
     return Math.min.apply(null, value);
 }
 
 console.log(findMin([1, 2, 3, 4, 5, 6, 7]));
 // findMin();
+
+function findMax(value) {
+    return Math.max.apply(null, value);
+}
+
+console.log(findMax([1, 2,3,4,5,6,7]))
