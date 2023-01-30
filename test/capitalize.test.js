@@ -13,7 +13,9 @@ const {capitalizeLetter} = require("./capitalize");
     test("All uppercase", () => {
         expect(capitalizeLetter("FOO")).toBe("Foo")
     })
-    //to-do: add test for all letters capitalized
-    //add test for numbers and characters (eliminating and creating new string)
-    //add test for spaces in words
-    //add test for first letter already capitalized
+    test("Including Symbols", () => {
+        expect(capitalizeLetter("$foo")).toBe("Foo")
+    })
+    test("1st Letter only Capitalized", () => {
+        expect(capitalizeLetter("FooF")).toBe("Foof")
+    })
