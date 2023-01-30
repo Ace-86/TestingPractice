@@ -12,4 +12,6 @@ test('Division', () => {
 test('Multiply', () => {
     expect(calculator.multiply(2, 2)).toEqual(4);
 })
-
+test('Is this a number', () => {
+    expect(calculator.add("a","a")).toEqual("both values must be a number")
+})
